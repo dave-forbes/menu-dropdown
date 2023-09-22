@@ -1,0 +1,159 @@
+body {
+  background-color:rgb(151, 53, 242);
+  color: rgb(251, 250, 242);
+  font-family: 'Roboto';
+}
+
+.main-content {
+  width: max(1000px, 60vw);
+  margin: 0 auto;
+  height: max(600px, 80vh);
+  display: grid;
+  grid-template-rows: 1fr 10fr;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+i.fa-poo {
+  transform: translateY(-4px);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: max(10px,2vw);
+}
+
+.nav-item {
+  font-size: 1.1rem;
+  display: flex;
+  gap: 0.3rem;
+  align-items: baseline;
+  transition: 0.3s;
+  cursor: pointer;
+  position: relative;
+}
+
+.nav-item:hover, .nav-item:focus {
+  color:rgb(198, 150, 243);
+}
+
+i.fa-angle-down {
+  transition: transform 0.3s;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.show-hide {
+  visibility: visible !important;
+  transform: translateY(-10px);
+}
+
+div.menu {
+  border-radius: 10px;
+  background-color: rgb(239, 235, 244);
+  position: absolute;
+  color: black;
+  padding: 1rem;
+  visibility: hidden;
+  top: 40px;
+  width: 120px;
+  box-shadow: 10px 10px 31px -3px rgba(77, 27, 124, 0.90);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+div.menu p {
+  padding: 1rem;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+  text-align: center;
+}
+
+div.menu p:hover {
+  background-color: rgba(137, 43, 226, 0.294);
+}
+
+.hero {
+  height: min(500px, 60vh);
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  justify-items: center;
+  align-content: space-evenly;
+  gap: 2rem;
+}
+
+.big-font {
+  font-size: 4rem;
+  margin: 5rem 0 0 0;
+  text-align: center;
+  font-weight: 600;
+  margin: 1rem 0 0 0;
+}
+
+.smaller-font {
+  font-size: 2.2rem;
+  text-align: center;
+  font-weight:300;
+  width: 80%;
+  margin:0;
+}
+
+button {
+  border: none;
+}
+
+.hero-button {
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  padding: 1rem 4rem;
+  border-radius: 5px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.hero-button:hover, .hero-button:focus {
+  background-color: white;
+  color: black;
+}
+
+.nav-button {
+  border: 1px solid white;
+  color: white;
+  background-color: rgb(151, 53, 242);
+  padding: 0.5rem 2rem;
+  border-radius: 3px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.nav-button:hover, .nav-button:focus {
+  background-color: white;
+  color: black;
+}
+
+.os {
+  display: flex;
+  gap: 3rem;
+}
+
+.os-item {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
